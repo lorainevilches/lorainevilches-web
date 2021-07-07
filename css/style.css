@@ -1,6 +1,6 @@
-html{background-color: #000;}
+*, html{padding: 0; margin: 0; background-color: #000;}
 main.page{width: 100%;}
-nav{
+section.navbar nav{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -10,20 +10,50 @@ nav{
     margin-right: 0;
 }
 @media (min-width: 64em) {
-    nav{
+    section.navbar nav{
         margin-top: 20px;
         margin-left: 50px;
         margin-right: 50px;
     }
 }
-nav .idv img{width: 100%; text-align: center;}
-@media (min-width: 64em) {
-    nav .idv img{width: 30%; text-align:left;}
+section.navbar nav .idv img{
+    width: 80%; text-align: center; padding-top: 20px; padding-left: 20px;
 }
-nav .wrapper a{margin-left: 15px; font-size: 1.5em; color: #f2f2f2;}
-nav .wrapper a:last-child{margin-right: 0;}
+@media (min-width:481px)  {
+    section.navbar nav .idv img{width: 60%;}
+}
+@media (min-width:641px)  {
+    section.navbar nav .idv img{width: 50%;}
+}
+@media (min-width:961px)  {
+    section.navbar nav .idv img{width: 50%; text-align:left;}
+}
+@media (min-width:1025px) {
+    section.navbar nav .idv img{width: 50%; text-align:left;}
+}
+@media (min-width:1281px) {
+    section.navbar nav .idv img{width: 30%; text-align:left;}
+}
+section.navbar nav .wrapper{min-width: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 20px;}
+section.navbar nav .wrapper a{margin-left: 15px; font-size: 1.5em; color: #f2f2f2; margin-top: 5px;}
+section.navbar nav .wrapper a:last-child{margin-right: 0;}
 
-.content{text-align: center; margin-top: 50px; padding: 0 20px; margin-bottom: 20px;}
-.content h3{color: rgb(7, 7, 138); font-family: 'Raleway', sans-serif;}
-.content p{color: #f2f2f2; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; line-height: 36px; text-align: left;}
-.content p a{background-color: #F2F2F2; padding: 4px 6px; color: #222; font-weight: 600;}
+section.intro .content{text-align: center; margin-top: 50px; padding: 0 20px; margin-bottom: 20px;}
+section.intro .content h3{    color: rgb(236 190 34); font-family: 'Raleway', sans-serif; font-size: 23px;}
+section.intro .content p{color: #f2f2f2; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; line-height: 36px; text-align: left;}
+@media (min-width: 64em) {
+    section.intro .content p{
+        text-align: center; font-size: 18px;
+    }
+}
+section.intro .content p a{background-color: #F2F2F2; padding: 4px 6px; color: #222; font-weight: 600;}
+
+section.api{background-color: #F2F2F2; width: 100%; height: auto;}
+
