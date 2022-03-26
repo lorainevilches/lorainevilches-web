@@ -6,7 +6,7 @@ This is the code that I`m create my personal website as Front-end developer,
 To know more about me, please, look into lorainevilches.com
 
 - Using pure HTML
-- cure CSS - no Frameworks
+- Pure CSS - no Frameworks
 - ✨FullRespoonsive✨
 
 ## Features
